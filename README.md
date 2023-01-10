@@ -18,7 +18,6 @@ The steps below are intended to provide guidance through the code files in this 
 We open the script 'pretraining.py'. This file trains an ANN to match two wave function-like functions. We set the parameters at the beginning of the file to our preference. This will store the models and the plots in 'saved_models/pretraining/.../', where the dots are a proxy for a set of subdirectories named after the hyperparameter combinations of our choice.
 
 ![plot](./example_plots/pretraining.png)
-<img src="https://github.com/javiroza/ml-the-deuteron/tree/main/example_plots/pretraining.png" width="48">
 
 ### Step 2. Training.
 We now open the script 'deuteron.py'. This file trains the ANN to minimise the energy. A loop is already programmed that will sequentially load the pretrained models (Step 1). The code allows to split the total list of pretrained models into batches so as to seize parallelized computing (clusters). The models thusly trained are automatically stored (if desired) in 'saved_models/n3lo/...'. By the end of this step we already have a fully trained model.
