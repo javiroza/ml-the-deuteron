@@ -17,6 +17,8 @@ The steps below are intended to provide guidance through the code files in this 
 ### Step 1. Pretraining.
 We open the script 'pretraining.py'. This file trains an ANN to match two wave function-like functions. We set the parameters at the beginning of the file to our preference. This will store the models and the plots in 'saved_models/pretraining/.../', where the dots are a proxy for a set of subdirectories named after the hyperparameter combinations of our choice.
 
+![plot](./example_plots/pretraining.png)
+
 ### Step 2. Training.
 We now open the script 'deuteron.py'. This file trains the ANN to minimise the energy. A loop is already programmed that will sequentially load the pretrained models (Step 1). The code allows to split the total list of pretrained models into batches so as to seize parallelized computing (clusters). The models thusly trained are automatically stored (if desired) in 'saved_models/n3lo/...'. By the end of this step we already have a fully trained model.
 
@@ -26,8 +28,6 @@ Note: the steps below are dedicated to error analysis and plotting.
 We open the script 'error_analysis/error_measure.py'. This file can automatically compute the errors of the trained models. A loop is already programmed that will sequentially load the trained models (Step 2). This will save E, Ks, Kd, Pd with their corresponding errors under the 'error_data/...' folder. 
 
 In order to generate FIG. 3 in the article, we can run the script 'error_analysis/oscillation_error_plot.py', and this will generate the figure and store it in 'saved_plots/oscillation_error_plot.pdf'.
-
-![plot](./saved_plots/oscillation_error_plot.pdf)
 
 ### Step 4. Convergence rates.
 We open the script 'error_analysis/convergence_rate.py' and set the adjustable parameter to our preferences. This file will compute the convergence rate of the specified models and store this data under the 'error_analysis/error_data/...' folder. This step generates the data needed for FIG. 2 of the paper and Tables II and III.
