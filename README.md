@@ -27,6 +27,8 @@ We open the script 'error_analysis/error_measure.py'. This file can automaticall
 
 In order to generate FIG. 3 in the article, we can run the script 'error_analysis/oscillation_error_plot.py', and this will generate the figure and store it in 'saved_plots/oscillation_error_plot.pdf'.
 
+![plot](./saved_plots/oscillation_error_plot.pdf)
+
 ### Step 4. Convergence rates.
 We open the script 'error_analysis/convergence_rate.py' and set the adjustable parameter to our preferences. This file will compute the convergence rate of the specified models and store this data under the 'error_analysis/error_data/...' folder. This step generates the data needed for FIG. 2 of the paper and Tables II and III.
 
