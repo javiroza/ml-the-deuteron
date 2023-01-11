@@ -29,10 +29,14 @@ We open the script 'error_analysis/error_measure.py'. This file can automaticall
 
 In order to generate FIG. 3 in the article, we can run the script 'error_analysis/oscillation_error_plot.py', and this will generate the figure and store it in 'saved_plots/oscillation_error_plot.pdf'.
 
+![plot](./example_plots/error_analysis.png)
+
 ### Step 4. Convergence rates.
 We open the script 'error_analysis/convergence_rate.py' and set the adjustable parameter to our preferences. This file will compute the convergence rate of the specified models and store this data under the 'error_analysis/error_data/...' folder. This step generates the data needed for FIG. 2 of the paper and Tables II and III.
 
 In order to generate FIG. 2 in the article, we can run the script 'error_analysis/convergence_rate_plot.py', and this will generate the figure and store it in 'saved_plots/convergence_rate.pdf'.
+
+![plot](./example_plots/convergence_rate.png)
 
 ### Step 5. Filtering the good runs.
 We open the script 'error_analysis/filter.py' and adjust the initial parameters. This program filters the trained models and selects the ones that match our criteria (defined via the initial parameters). The selected runs are copied in a folder named 'filtered_runs' found under the 'error_analysis/error_data/' folder.
@@ -40,12 +44,18 @@ We open the script 'error_analysis/filter.py' and adjust the initial parameters.
 ### Step 6. Plotting energy and fidelity.
 In order to generate FIG. 4 in the article, we open the script 'energy_fidelity_plot/energy_fidelity_plot.py', set the initial parameters and run the file. Text files under the folder 'energy_fidelity_plot/plotting_data/'' with further errors will be generated in the process. Once the program is done, the resulting plot will be stored in 'saved_plots/master_plot.pdf'. 
 
+![plot](./example_plots/master_plot.png)
+
 ### Step 6. Plotting wave functions and their variances.
 We open the script 'error_analysis/wf_variance/wf_var.py', set the initial parameters and run the file. This file will generate data in the same folder where it is located, which is necessary to generate FIGs.5 and 6 of the paper.
 
 In order to generate FIG. 5 in the article we open the script 'error_analysis/wf_variance/var_plot_wf.py', set the initial parameters and run the file. This will generate the figure and store it in 'saved_plots/wf_variance_wf.pdf'. 
 
+![plot](./example_plots/wf_var_wf.png)
+
 In order to generate FIG. 6 in the article we open the script 'error_analysis/wf_variance/var_plot_stdev.py', set the initial parameters and run the file. This will generate the figure and store it in 'saved_plots/wf_variance_var.pdf'. 
+
+![plot](./example_plots/wf_var_stdev.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
