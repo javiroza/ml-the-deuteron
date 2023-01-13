@@ -47,7 +47,7 @@ In order to generate FIG. 4 in the article, we open the script 'energy_fidelity_
 ![plot](./example_plots/master_plot.png)
 
 ### Step 6. Plotting wave functions and their variances.
-We open the script 'error_analysis/wf_variance/wf_var.py', set the initial parameters and run the file. This file will generate data in the same folder where it is located, which is necessary to generate FIGs.5 and 6 of the paper.
+We open the script 'error_analysis/wf_variance/wf_var.py', set the initial parameters and run the file. This file will generate data in the same folder where it is located, which is necessary to generate FIGs. 5 and 6 of the paper.
 
 In order to generate FIG. 5 in the article we open the script 'error_analysis/wf_variance/var_plot_wf.py', set the initial parameters and run the file. This will generate the figure and store it in 'saved_plots/wf_variance_wf.pdf'. 
 
@@ -56,6 +56,9 @@ In order to generate FIG. 5 in the article we open the script 'error_analysis/wf
 In order to generate FIG. 6 in the article we open the script 'error_analysis/wf_variance/var_plot_stdev.py', set the initial parameters and run the file. This will generate the figure and store it in 'saved_plots/wf_variance_var.pdf'. 
 
 ![plot](./example_plots/wf_var_stdev.png)
+
+### Step 7. Overfitting quantification
+We open the script 'error_analysis/wf_variance/overfitting_quantification.py' and run the file. This action will cause a print out to the console with the values found in TABLE I of the paper.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
