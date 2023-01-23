@@ -32,7 +32,7 @@ In order to generate FIG. 3 in the article, we can run the script 'error_analysi
 ![plot](./example_plots/error_analysis.png)
 
 ### Step 4. Convergence rates.
-We open the script 'error_analysis/convergence_rate.py' and set the adjustable parameter to our preferences. This file will compute the convergence rate of the specified models and store this data under the 'error_analysis/error_data/...' folder. This step generates the data needed for FIG. 2 of the paper and Tables II and III.
+We open the script 'error_analysis/convergence_rate.py' and set the adjustable parameter to our preferences. This file will compute the energy errors and convergence rate of the specified models and store this data under the 'error_analysis/error_data/...' folder. This step generates the data needed for FIG. 2 of the paper and Tables II and III.
 
 In order to generate FIG. 2 in the article, we can run the script 'error_analysis/convergence_rate_plot.py', and this will generate the figure and store it in 'saved_plots/convergence_rate.pdf'.
 
